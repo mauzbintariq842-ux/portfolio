@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maaz Bin Tariq | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Maaz Bin Tariq</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button id="theme-toggle">Dark Mode</button></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero fade-in">
+  <div class="hero-bg"></div>
+  <img src="assets/profile.jpg.png" alt="Profile Image" class="profile-img">
+  <h1>Hello, I'm <span class="typed-text"></span><span class="typed-cursor">|</span></h1>
+  <p>DAE ICT Student | Web Developer</p>
+  <div class="hero-buttons">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mauzbintariq842@gmail.com" target="_blank" class="btn">Gmail</a>
+    <a href="https://wa.me/923365532545" target="_blank" class="btn whatsapp">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/mauz-bin-tariq-266618395/" target="_blank" class="btn linkedin">LinkedIn</a>
+    <a href="https://github.com/mauzbintariq842-ux?tab=repositories" target="_blank" class="btn github">GitHub</a>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="fade-in">
+  <h2>Resume</h2>
+  <div class="resume-container">
+    <div class="resume-card">
+      <h3>Personal Information</h3>
+      <p><strong>Name:</strong> Maaz Bin Tariq</p>
+      <p><strong>Location:</strong> Rawalpindi, Punjab, Pakistan</p>
+      <p><strong>Phone:</strong> 0336-5532545</p>
+      <p><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mauzbintariq842@gmail.com" target="_blank">mauzbintariq842@gmail.com</a></p>
+      <p><strong>Date of Birth:</strong> 05 March 2007</p>
+      <p><strong>Nationality:</strong> Pakistani</p>
+      <p><strong>Languages:</strong> Urdu, English</p>
+    </div>
+    <div class="resume-card">
+      <h3>Career Objective</h3>
+      <p>To apply my ICT and web development skills to build modern, fast, and creative websites while continuously improving my expertise in technology.</p>
+    </div>
+    <div class="resume-card">
+      <h3>Education</h3>
+      <p><strong>DAE in Information & Communication Technology</strong><br>CTTI College, Rawalpindi | Expected Completion: 2026</p>
+      <p><strong>Matriculation in Computer Science</strong><br>Shah-e-Hamdan Public High School, Nowshera – BISE Sargodha | Completed: 2022</p>
+    </div>
+    <div class="resume-card">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>WordPress (Theme & Plugin Customization)</li>
+        <li>Website Management & E-commerce Setup</li>
+        <li>MS Office</li>
+        <li>Communication & Report Writing</li>
+      </ul>
+    </div>
+    <div class="resume-card">
+      <h3>Projects & Certifications</h3>
+      <p>Developed responsive websites using HTML, CSS, and JavaScript.</p>
+      <p>Created and customized WordPress themes and plugins.</p>
+      <p>Managed and optimized websites for better performance and design.</p>
+      <p>6-Month WordPress Development Certificate</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade-in">
+  <h2>My Skills</h2>
+  <div class="skill">
+    <span>HTML <span class="skill-percent">90%</span></span>
+    <div class="skill-bar"><div class="skill-level" data-width="90%"></div></div>
+  </div>
+  <div class="skill">
+    <span>CSS <span class="skill-percent">85%</span></span>
+    <div class="skill-bar"><div class="skill-level" data-width="85%"></div></div>
+  </div>
+  <div class="skill">
+    <span>JavaScript <span class="skill-percent">80%</span></span>
+    <div class="skill-bar"><div class="skill-level" data-width="80%"></div></div>
+  </div>
+  <div class="skill">
+    <span>WordPress <span class="skill-percent">75%</span></span>
+    <div class="skill-bar"><div class="skill-level" data-width="75%"></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="assets/profile.jpg.png" alt="Portfolio Project">
+      <div class="project-overlay">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio built using HTML, CSS & JS.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+  <h2>Contact Me</h2>
+  <div class="contact-buttons">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mauzbintariq842@gmail.com" target="_blank" class="btn">Gmail</a>
+    <a href="https://wa.me/923365532545" target="_blank" class="btn whatsapp">WhatsApp</a>
+  </div>
+  <form id="contact-form" action="https://formspree.io/f/movpylke" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="form-msg"></p>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Maaz Bin Tariq. All rights reserved.</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-contact">
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mauzbintariq842@gmail.com" target="_blank" class="floating-btn email">
+    <span class="icon">✉️</span>
+    <span class="label">Email Me</span>
+  </a>
+  <a href="https://wa.me/923365532545" target="_blank" class="floating-btn whatsapp">
+    <span class="icon">💬</span>
+    <span class="label">Chat on WhatsApp</span>
+  </a>
+  <a href="https://www.linkedin.com/in/mauz-bin-tariq-266618395/" target="_blank" class="floating-btn linkedin">
+    <span class="icon">🔗</span>
+    <span class="label">LinkedIn</span>
+  </a>
+  <a href="https://github.com/mauzbintariq842-ux?tab=repositories" target="_blank" class="floating-btn github">
+    <span class="icon">🐱</span>
+    <span class="label">GitHub</span>
+  </a>
+  <a href="#" class="floating-btn top" id="scrollTop">
+    <span class="icon">⬆️</span>
+    <span class="label">Top</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
